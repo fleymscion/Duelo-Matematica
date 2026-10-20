@@ -18,16 +18,14 @@ public class Main extends Application {
 
         // Buttons
         Button btnLogin = createBorderedButton("LOGIN");
-        Button btnCreateAccount = createBorderedButton("CREATE ACCOUNT");
-        Button btnExit = createBorderedButton("EXIT");
+        Button btnCreateAccount = createBorderedButton("REGISTER");
 
         // Actions
         btnLogin.setOnAction(e -> showDummyPopup("LOGIN"));
-        btnCreateAccount.setOnAction(e -> showDummyPopup("CREATE ACCOUNT"));
-        btnExit.setOnAction(e -> System.exit(0));
+        btnCreateAccount.setOnAction(e -> showDummyPopup("REGISTER"));
 
         // Button Container
-        VBox buttonBox = new VBox(15, btnLogin, btnCreateAccount, btnExit);
+        VBox buttonBox = new VBox(15, btnLogin, btnCreateAccount);
         buttonBox.setAlignment(Pos.CENTER);
         buttonBox.setFillWidth(true);
 
