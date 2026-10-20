@@ -28,7 +28,7 @@ public class Main extends Application {
         );
 
         // Buttons
-        Button AbortButton = createBorderedButton("Abort Messages");
+        Button AbortButton = createBorderedButton("Abort!");
 
         // Container to stack the buttons vertically
         VBox buttonBox = new VBox(15, AbortButton);
